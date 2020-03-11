@@ -4,15 +4,15 @@
 
 Ejecutar `npm install`
 
-## Development server
+## Servidor de desarrollo
 
 Ejecutar `ng serve` para un servidor de desarrollo. Navegue a `http: // localhost: 4200 /`. La aplicación se volverá a cargar automáticamente si cambia alguno de los archivos de origen.
 
-## Code scaffolding
+## Crear componentes, guard, interfaces ...
 
 Ejecutar `ng generate component component-name` para generar un nuevo componente. También puede usar `ng generate directive | pipe | service | class | guard | interface | enum | module`.
 
-## Build
+## Construir
 
 Ejecutar `ng build` para construir el proyecto. Los artefactos de compilación se almacenarán en el directorio `dist /`. Use la bandera `--prod` para una construcción de producción.
 
