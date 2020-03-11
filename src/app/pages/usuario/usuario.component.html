@@ -1,0 +1,62 @@
+<div class="row">
+    <div class="col">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Primer nombre</label>
+            <input type="text" class="form-control" id="role" placeholder="Primer nombre" [(ngModel)]="person.firstName">
+        </div>
+    </div>
+    <div class="col">
+        <div class="form-group">
+            <label for="exampleFormControlInput2">Segundo nombre</label>
+            <input type="text" class="form-control" id="description" placeholder="Segundo nombre" [(ngModel)]="person.secondName">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Primer apellido</label>
+            <input type="text" class="form-control" id="role" placeholder="Primer apellido" [(ngModel)]="person.firstLastName">
+        </div>
+    </div>
+    <div class="col">
+        <div class="form-group">
+            <label for="exampleFormControlInput2">Segundo apellido</label>
+            <input type="text" class="form-control" id="description" placeholder="Segundo apellido" [(ngModel)]="person.secondLastName">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <div class="form-group">
+            <label for="exampleFormControlInput2">Usuario</label>
+            <input type="text" class="form-control" id="description" placeholder="Usuario" [(ngModel)]="user.username">
+        </div>
+    </div>
+    <div class="col">
+        <div class="form-group">
+            <label for="exampleFormControlInput2">Contraseña</label>
+            <input type="text" class="form-control" id="description" placeholder="Contraseña" [(ngModel)]="user.password">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="form-group">
+            <label for="exampleFormControlInput2">Role</label>
+            <select class="form-control" id="Rol" [(ngModel)]="user.roleid">
+                <option *ngFor="let role of roles" value="{{role.id}}">{{role.name}}</option>
+            </select>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <input type="button" value="Guardar" class="btn btn-primary btn-block" (click)="save()">
+    </div>
+</div>
+
+
+
+
+<!-- <input type="button" value="{{edit?'Editar':'Guardar'}}" class="btn btn-primary" (click)="save(form)"> -->
