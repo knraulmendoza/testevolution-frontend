@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   async login(){
     let u = await this.loginSer.authenticate(this.user)//?
     if (u == null) {
-      alertify.error("Usuario y/o Contraseña incorrectas");
+      alertify.error("No puedes ingresar al sistema");
     } else {
         alertify.success("Datos correctos");
         this.route.navigate(['nav/mapa']);
