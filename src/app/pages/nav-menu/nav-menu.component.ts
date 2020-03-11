@@ -39,7 +39,7 @@ export class NavMenuComponent implements OnInit {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
     });
   }
-  openForm(form, edi: boolean, role: IRole) {
+  openForm(form, edi: boolean, role?: IRole) {
     this.edit = edi;
     console.log(this.edit);
     if (edi) {

@@ -53,7 +53,7 @@
     </button>
   </div>
   <div class="modal-body">
-    <input type="button" value="{{edit?'Editar':'Guardar'}}" class="btn btn-primary" (click)="openForm(form, false)">
+    <input type="button" value="{{edit?'Editar':'Regstrar'}}" class="btn btn-primary" (click)="openForm(form, false)">
       <table class="table table-striped">
         <thead>
         <tr>
@@ -111,31 +111,6 @@
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
-  <div class="modal-body">
-    <input type="button" value="{{edit?'Editar':'Guardar'}}" class="btn btn-primary" (click)="openForm(form, false)">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col" sortable="name">Nombre</th>
-            <th scope="col">Usuario</th>
-            <!-- <th scope="col" sortable="description">Descripcion</th> -->
-            <th scope="col" >Estado</th>
-            <th scope="col" sortable="edit">Acción</th>
-          </tr>
-        </thead>
-        <tbody>
-        <!-- <tr *ngFor="let role of roles; index as i">
-          <th scope="row">{{ i+1 }}</th>
-          <td>{{role.name}}</td>
-          <td>{{role.description}}</td>
-          <td>{{role.state==1?'Activo':'Inactivo'}}</td>
-          <td><a (click)="openForm(form, true, role)">editar</a></td>
-        </tr> -->
-        </tbody>
-      </table>
-  </div>
-</ng-template>
 <ng-template #adduser let-modal>
   <div class="modal-header">
     <h4 class="modal-title" id="modal-basic-title">{{edit?'Editar usuario':'Registrar usuario'}}</h4>
